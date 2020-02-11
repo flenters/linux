@@ -18,3 +18,7 @@ sudo mount -t cifs -o user=username,vers=2.0 //remoteserver/share /home/share
 Delete file within a date range
 find . -type f -newermt ' 08 oct 2018 00:00:00' -not -newermt '31 dec 2018 00:00:00' -ls
 find . -type f -newermt ' 08 oct 2018 00:00:00' -not -newermt '31 dec 2018 00:00:00' -delete
+
+
+Use file as input to grep
+grep -i -f inputfile.txt filetocheck.txt > output.log
