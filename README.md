@@ -22,3 +22,6 @@ find . -type f -newermt ' 08 oct 2018 00:00:00' -not -newermt '31 dec 2018 00:00
 
 Use file as input to grep
 grep -i -f inputfile.txt filetocheck.txt > output.log
+
+find a process from a port numner
+netstat -tulpn | grep portnumber
