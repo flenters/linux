@@ -25,3 +25,27 @@ grep -i -f inputfile.txt filetocheck.txt > output.log
 
 find a process from a port numner
 netstat -tulpn | grep portnumber
+
+check folder size
+du -sh folder/
+
+#################
+##Docker Basics##
+#################
+
+Pulls Image
+docker-compose pull 
+
+Stops / Starts Image 
+docker-compose down
+docker-composeup -d //-d for background
+
+List running images
+docker container ps
+
+Inspect Image logs
+docker container logs image-name
+
+Check Network
+docker network inspect network-name
+
