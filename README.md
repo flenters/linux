@@ -49,3 +49,11 @@ docker container logs image-name
 Check Network
 docker network inspect network-name
 
+
+#################
+##Kuber  Basics##
+#################
+
+kubectl get namespace
+kubectl get pods
+
